@@ -29,12 +29,12 @@ e nos serializadores.
 
 ### Docker
 No comando RUN do docker todos os comandos de criação do servidor foram
-colocados em uma única linha (uso do &&). Essa técnica abre mão da capacida de 
+colocados em uma única linha (uso do &&). Essa técnica abre mão da capacidade de 
 criação de camadas do Docker em benefício do tamanho do arquivo. 
-Foi utilizado um comando para encerrar o problema de database racing, já que a aplicação espere que o db
-fique pronto, uma vez que o comando 'depends_on'
+Foi utilizado um comando para encerrar o problema de database racing, fazendo com que a aplicação espera que o DB
+esteja devidamente inicializado e ativo. O comando Docker 'depends_on'
 possui limitações, já que o banco até inicia mas até estar disponível leva alguns
-segundos.
+segundos. 
 
 ## Como instalar
 Na pasta do projeto, digite:
