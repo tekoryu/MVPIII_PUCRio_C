@@ -67,3 +67,12 @@ digite:
 Foi incluída uma solução de teste contínuo no Github Actions, caso desejem basta 
 acessar no meu github o repositório 'xihu-app-api', que é meu projeto de livro de receitas para estudar deployment.
 
+## Considerações Finais
+Pacotes de manipulação de CORS nos HEADERS foram adicionados apenas para garantir que os avaliadores não tenham problemas
+com o acesso via localhost. No deploy seria preferida a componentização com o NGINX.
+
+## Considerações Finais
+Foram adicionados a este projeto pacotes e configurações de CORS para garantir que os avaliadores não terão problemas
+tentando acessar a API através de um localhost. Em um produto final não seria utilizado, sendo preferida a utilização de um
+proxy NGINX para lidar com os nomes de domínio.
+
